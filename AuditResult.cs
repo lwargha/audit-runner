@@ -12,7 +12,7 @@ namespace Byui.CourseAudits.Business.Model.AuditBaseClass
         public string AuditStatus => GetAuditStatus();
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        private List<AuditMessage> Messages { get; set; }
+        public List<AuditMessage> Messages { get; set; }
         private string GetAuditStatus()
         {
             return "TODO calculate status";
